@@ -1,2 +1,2 @@
 # FBMailer
-gửi tin nhắn vào fb bằng cookie
+Send Via Message With Facebook Cookie
