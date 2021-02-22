@@ -44,6 +44,7 @@ class FB_Mailer {
       $datapost = curl_init();
       $headers = array("Expect:");
       curl_setopt($datapost, CURLOPT_URL, "https://m.facebook.com/messages/send/?icm=1&entrypoint=web%3Atrigger%3Athread_list_thread&refid=12");
+      curl_setopt($datapost, CURLOPT_RETURNTRANSFER, 1);
       curl_setopt($datapost, CURLOPT_TIMEOUT, 40000);
       curl_setopt($datapost, CURLOPT_HEADER, TRUE);
       curl_setopt($datapost, CURLOPT_HTTPHEADER, $headers);
